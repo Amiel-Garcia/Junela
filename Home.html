@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>Marilag</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+    <link rel="icon" type="image/x-icon" href="msc/images/3d1bc1a2-652a-4a96-93ce-3a1fc523babb.ico">
+
+</head>
+<body id="container">
+    <div class="navigation">
+        <h1>Marilag</h1>
+        
+        <div class="carousel">
+            <button class="carousel-button prev" id="prevButton">◀</button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track" id="carouselTrack">
+                    <li class="carousel-slide">
+                        <a href="https://www.youtube.com/watch?app=desktop&v=P080M4AuBvk&pp=ygUIIzE1M2xpdmU%3D" target="_blank"><img src="msc/images/dionelaslide1.png" alt="Album 1"></a>
+                    </li>
+                    <li class="carousel-slide">
+                        <a href="https://www.youtube.com/watch?v=BdcgO8DO_Ms" target="_blank"><img src="msc/images/dionelaslide2.png" alt="Album 2"></a>
+                    </li>
+                    <li class="carousel-slide">
+                        <a href="https://www.youtube.com/watch?v=pNfTwz8QMVk" target="_blank"><img src="msc/images/dionelaslide3.png" alt="Album 3"></a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <button class="carousel-button next" id="nextButton">▶</button>
+        </div>
+        
+
+
+        <ul>
+        <li><button class="about-button" onclick="toggleAboutMarilag()">About Marilag</button></li>
+        <li><button onclick="toggleAboutDionela()">About Dionela</button></li>
+        <li><button onclick="toggleMusic()">Music Library</button></li>
+        <li><button onclick="toggleInvite()">Invite</button></li>
+
+
+        <li><button onclick="showUnderDevelopmentAlert()">Merch</button></li>
+        <li><button onclick="showUnderDevelopmentAlert()">Fan Interaction</button></li>
+        <li><button onclick="showUnderDevelopmentAlert()">Events</button></li>
+        <li><button onclick="showUnderDevelopmentAlert()">Exclusive Content</button></li>
+        <li><button onclick="showUnderDevelopmentAlert()">Collaborations</button></li>
+        <li><button onclick="showUnderDevelopmentAlert()">Newsletter</button></li>
+        <li><button onclick="showUnderDevelopmentAlert()">Multimedia</button></li>
+        </ul>
+
+      <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 Marilag. All rights reserved.</p>
+                <p>Address: Kelt-9B Ikinamada, Nu-kushi Prefecture, Japan</p>
+                <p>Follow us on social media: 
+                <a href="https://facebook.com">Facebook</a>, 
+                <a href="https://twitter.com">Twitter</a>, 
+                <a href="https://instagram.com">Instagram</a>
+                </p>
+            </div>
+    </footer>
+</div>
+
+      <div class="others">
+
+        <a href="https://www.facebook.com/dionelamusic" target="_blank">
+            <input type="image" src="msc/images/facebook.png" alt="facebook" width="50px" height="50px">
+        </a>
+
+        <a href="https://www.facebook.com/messages/t/8361307763898535/" target="_blank">
+            <input type="image" src="msc/images/messenger.png" alt="facebookgroup" width="50px" height="50px">
+        </a>
+
+        <a href="https://www.instagram.com/dionelaofficial/?hl=en" target="_blank">
+            <input type="image" src="msc/images/instagram.png" alt="instagram" width="50px" height="50px">
+        </a>
+        <div class="spotify-container">
+          <a href="https://open.spotify.com/artist/1chOgh5tgwfiyJ2zhUHwBj" target="_blank">
+              <input type="image" src="msc/images/spotify.png" alt="spotify" class="spotify">
+          </a>
+            <div class="image-spotify">
+              <img src="msc/images/thisisdionela.jpg" alt="Pop-out Image">
+            </div>
+      </div>
+
+    <div class = "youtube-container">
+        <a href="https://www.youtube.com/channel/UCyQHl3yduRCz_dg9JU0sjMA" target="_blank">
+            <input type="image" src="msc/images/youtube.png" alt="youtube" class = "youtube" width="50px" height="50px">
+        </a>
+        <div class="image-youtube">
+          <img src="msc/images/youtube-screenshot.png" alt="Pop-out Image">
+        </div>
+    </div>
+
+    <div class = "dev-info">
+        <a href="devinfo.html" target="_blank">
+            <input type="image" src="msc/images/Info.png" alt="facebook" width="50px" height="50px">
+        </a>
+    </div>
+
+    </div>
+
+      <div class="parallax">
+        <div class="parallax-content">
+          <h1>Welcome to Marilag</h1>
+          <p>Discover the artistry of Dionela.</p>
+        </div>
+      </div>
+
+
+
+      <div id="about-marilag" class="about-marilag">
+     <img src = "msc/images/about-marilag.jpg" class = "about-marilag-image">
+      <button class="close-button" onclick="toggleAboutMarilag()">X</button>
+
+        <p>
+            Marilag is a vibrant and immersive platform dedicated to showcasing the artistry and creativity of the rising OPM sensation, Dionela. Designed as a one-stop hub for fans, event organizers, and music enthusiasts, the website aims to bridge the gap between the artist and the audience by providing access to his music, live events, and exclusive content.
+            More than just a booking site, Marilag serves as a dynamic space that celebrates the evolving landscape of Original Pilipino Music. It offers tools for seamless gig scheduling, interactive features to engage fans, and a comprehensive library that highlights the artist’s works and journey.
+            Marilag aspires to inspire, connect, and foster a deeper appreciation of OPM by creating a community that resonates with the music, stories, and vision of one of its promising talents.
+        </p>
+      </div>
+
+
+      </div>
+        <div id="about-dionela" class="about-dionela">
+            <img src = "msc/images/BBPH_DIONELA-HOT-100_FTD-1600x838 (1).jpg" class = "about-marilag-image">
+                <h1>DIONELA</h1>
+                <h2>DIONELA</h2>
+                    <button class="close-button" onclick="toggleAboutDionela()">X</button>
+   
+                <p>
+                     Marilag is a vibrant and immersive platform dedicated to showcasing the artistry and creativity of the rising OPM sensation, Dionela. Designed as a one-stop hub for fans, event organizers, and music enthusiasts, the website aims to bridge the gap between the artist and the audience by providing access to his music, live events, and exclusive content.
+                    More than just a booking site, Marilag serves as a dynamic space that celebrates the evolving landscape of Original Pilipino Music. It offers tools for seamless gig scheduling, interactive features to engage fans, and a comprehensive library that highlights the artist’s works and journey.
+                    Marilag aspires to inspire, connect, and foster a deeper appreciation of OPM by creating a community that resonates with the music, stories, and vision of one of its promising talents.
+                </p>
+        </div>
+
+         
+
+         <div id="music-library" class="music-library">
+            <div class="top"><h1>T<br>O<br>P</h1></div>
+            <div class="hit"><h1>H<br>   I<br>T<br>S</h1></div>
+                <div class="row1">
+                    <div class="music-item">
+                        <img id="song-image" src="msc/images/junela.gif.gif" alt="Song Image">
+                            <h4 id="song-title"></h4>
+                                <div class="audio-player">
+                                    <audio id="audio-player" controls>
+                                        <source id="audio-source" src="msc/audio/dionela_song1.mp3" type="audio/mp3">
+                                        Your browser does not support the audio element.
+                                    </audio>
+                                </div>
+
+                                <div class="controls">
+                                    <button id="prev-btn">Previous</button>
+                                    <button id="next-btn">Next</button>
+                                </div>
+                    </div>
+            </div>
+          </div>
+          
+
+          
+          <div id="invite" class="invite">
+            <button class="close-button" onclick="toggleInvite()">X</button>
+            <div id="services" class="services">
+                <h2>Book Dionela</h2>
+                <form action="/submit-booking" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="hotshotteapotETANOL@gmail.com" required>
+            
+                    <label for="date">Event Date:</label>
+                    <input type="date" id="date" name="date" required>
+            
+                    <label for="location">Event Location:</label>
+                    <input type="text" id="location" name="location" placeholder="Limbics st Quezon City " required>
+            
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Isa kang halimaw dionela" required></textarea>
+            
+                    <button type="submit">Submit Booking</button>
+                </form>
+            </div>
+        </div>
+
+<script>
+    (function() {
+    document.addEventListener("mousemove", parallax);
+    const elem = document.querySelector("#container");
+
+              function parallax(e) {
+                  let _w = window.innerWidth/2;
+                  let _h = window.innerHeight/2;
+                  let _mouseX = e.clientX;
+                  let _mouseY = e.clientY;
+                  let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+                  let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+                  let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+                  let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+                  elem.style.backgroundPosition = x;
+              }
+          })();
+
+function toggleAboutMarilag() 
+{
+    const aboutDiv = document.getElementById('about-marilag');
+    aboutDiv.classList.toggle('open');
+}
+
+function toggleAboutDionela() 
+{
+    const aboutDiv = document.getElementById('about-dionela');
+    aboutDiv.classList.toggle('open');
+}
+
+function toggleMusic() {
+    const aboutDiv = document.getElementById('music-library');
+    aboutDiv.classList.toggle('open');
+}
+
+function toggleInvite() 
+{
+    const aboutDiv = document.getElementById('invite');
+    aboutDiv.classList.toggle('open');
+}
+
+let currentIndex = 0;
+const slides = document.querySelectorAll('.carousel-slide');
+const track = document.querySelector('.carousel-track');
+const totalSlides = slides.length;
+
+function updateCarousel()
+{
+    track.style.transform = `translateX(-${currentIndex * 280}px)`; 
+}
+
+document.querySelector('.carousel-button.next').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalSlides;  
+    updateCarousel();
+});
+
+document.querySelector('.carousel-button.prev').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; 
+    updateCarousel();
+});
+
+const songs = 
+    [
+    { title: "Oksihina", src:"msc/audio/Dionela - Oksihina (Official Lyric Video).mp3", img: "msc/images/Oksihina.jpg"},
+    { title: "Hoodie", src: "msc/audio/Dionela - Hoodie (Official Lyric Video) ft. Alisson Shore.mp3", img: "msc/images/Hoodie.jpg" },
+    { title: "Sining", src: "msc/audio/Dionela - sining (Lyrics) ft. Jay R.mp3", img: "msc/images/Sining.jpg" },
+    { title: "Musika", src: "msc/audio/Dionela - Musika (Official Lyric Video).mp3", img: "msc/images/Musika.jpg" },
+    { title: "153", src: "msc/audio/Dionela - 153 (Official Lyric Video).mp3", img: "msc/images/153.jpg" },
+    { title: "Marilag", src: "msc/audio/Dionela - Marilag (Official Lyric Video) [cHSRG1mGaAo].mp3", img: "msc/images/Marilag.jpg" },
+    { title: "Langit", src: "msc/audio/Dionela - Langit (Lyric Video)", img: "msc/images/Langit.jpg" }
+    ];
+
+  let currentSongIndex = 0;
+
+  const audioPlayer = document.getElementById("audio-player");
+  const audioSource = document.getElementById("audio-source");
+  const songImage = document.getElementById("song-image");
+  const songTitle = document.getElementById("song-title");
+  const prevBtn = document.getElementById("prev-btn");
+  const nextBtn = document.getElementById("next-btn");
+
+function updateSong(index) 
+{
+    audioSource.src = songs[index].src;
+    audioPlayer.load();
+    songImage.src = songs[index].img;
+    songTitle.textContent = songs[index].title;
+    audioPlayer.volume = 0.25; 
+    audioPlayer.play();
+}
+
+prevBtn.addEventListener("click", () => {
+currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+updateSong(currentSongIndex);
+});
+
+nextBtn.addEventListener("click", () => {
+    currentSongIndex = (currentSongIndex + 1) % songs.length;
+    updateSong(currentSongIndex);
+});
+
+function showUnderDevelopmentAlert() 
+{
+    alert("Still under development");
+}
+</script>
+   
+          
+
+  </body>
+
+  </html>

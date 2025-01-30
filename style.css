@@ -1,0 +1,712 @@
+body 
+{
+    background-color: #ffffff;
+    background-image: url('msc/images/untitled design.png');
+    background-size: 80%, cover, cover;
+    background-position: center, top, bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navigation
+{
+    max-height: 900px; 
+    overflow-y: scroll; 
+    scrollbar-width: thin; 
+    scrollbar-color: #808080 #1f1f1f; 
+    width: 25%;
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+    padding: 20px;
+    z-index: 100;
+}
+
+
+.navigation::-webkit-scrollbar 
+{
+    width: 8px; 
+}
+
+.navigation::-webkit-scrollbar-track 
+{
+    background-color: transparent; 
+}
+
+.navigation::-webkit-scrollbar-thumb 
+{
+    background-color: #808080;
+    border-radius: 10px;
+}
+
+.navigation::-webkit-scrollbar-thumb:hover 
+{
+    background-color: #555;
+}
+
+.navigation h1 
+{   
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-left: 34%;
+}
+
+.navigation ul 
+{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navigation ul li 
+{
+    margin: 10px 0;
+}
+
+.navigation ul li button
+{
+    background-color: #333;
+    color: #f5f5f5; 
+    border: none;
+    padding: 10px 20px; 
+    font-size: 20px; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s;
+    width: 170px;
+    height: 70px;
+    margin-left: 50px;
+}
+
+.navigation ul li button:hover
+{
+    background-color: #ff6347; 
+    color: #fff; 
+}
+
+.others 
+{
+    position: relative;
+    width: 70px;
+    height: 900px;
+    left: 1050px;
+    background-color: #1f1f1f;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+.others a 
+{
+    margin-top: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+
+.others a:hover 
+{
+    transform: scale(1.2); 
+}
+
+.others input[type="image"] 
+{
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+}
+
+.spotify-container 
+{
+    position: relative;
+}
+
+.spotify 
+{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 2; 
+}
+
+.image-spotify 
+{
+    width: 200px;
+    height: 100px;
+    background-color: #3d3d3d;
+    position: absolute;
+    top: -0px;
+    left: 0;
+    transform: translateX(20%); 
+    transition: transform 0.5s ease-in-out; 
+    border-radius: 5px;
+    z-index: 500;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.spotify-container:hover .image-spotify 
+{
+    transform: translateX(-259px); 
+    opacity: 1;
+}
+
+.youtube 
+{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.image-youtube 
+{
+    width: 200px;
+    height: 100px;
+    background-color: #3d3d3d;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    transform: translateX(130%); 
+    transition: transform 0.5s ease-in-out;
+    border-radius: 5px;
+    z-index: 500;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.youtube-container:hover .image-youtube 
+{
+    transform: translateX(-414px);
+    opacity: 1;
+}
+
+.dev-info
+ {
+    margin-top: 250px;
+ }
+
+.parallax
+{
+    margin-left: -50px;
+}
+
+footer 
+{
+    background-color: #8c7b5b; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content 
+{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a 
+{
+    color: #ffffff; 
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover 
+{
+    color: #d9c6a8; 
+}
+
+.about-marilag 
+{
+    position: fixed;
+    left: -730px;
+    top: 0;
+    width: 1050px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    z-index: 50;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.close-button1 
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+
+.about-marilag.open 
+{
+    left: 373px;
+    opacity: 1;
+    z-index: 100;
+}
+
+.about-marilag p 
+{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+    padding-top: 100px;
+    text-align: justify; 
+    max-width: 900px; 
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-marilag-image 
+{
+    width: 100%;
+    opacity: 0.8;
+    border-bottom: solid 2px;
+    border-color: black;
+}
+
+.about-dionela 
+{
+    position: fixed;
+    left: -730px; 
+    top: 0;
+    width: 1050px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    z-index: 50;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.close-button 
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+
+.about-dionela.open 
+{
+    left: 373px;
+    opacity: 1;
+    z-index: 100;
+}
+
+.about-dionela p 
+{
+    font-size: 18px;
+    position: relative;
+    line-height: 1.6;
+    margin-top: -380px;
+    padding: 20px 120px 20px 120px;
+    text-align: justify;
+    max-width: 900px;
+    margin-left: 70px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #262626;
+    z-index: 100;
+
+}
+
+.about-dionela-image 
+{
+    width: 100%;
+    opacity: 0.8;
+    padding-bottom: 0px;
+    border-bottom: solid 2px;
+    border-color: rgb(0, 0, 0);
+    z-index: 1;
+}
+
+.about-dionela h1
+{
+    position: relative;
+    top: -50%;
+    left: 320px;
+    font-size: 70px;
+    color: white;
+    z-index: 2;
+}
+
+.about-dionela h2
+{
+    position: relative;
+    top: -61%;
+    left: 326px;
+    font-size: 70px;
+    color: rgb(49, 49, 49);
+    z-index: 1;
+}
+
+
+
+
+.music-library {
+    position: fixed;
+    left: -730px;
+    top: 0;
+    width: 1051px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    z-index: 50;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.top
+{
+    font-size: 56px;
+    height: 650px;
+    width: 40px;
+    position: absolute;
+    left: 70px;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.hit
+{
+    font-size: 56px;
+    height: 650px;
+    width: 40px;
+    position: absolute;
+    left: 850px;
+    top: 120px;
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.music-library.open 
+{
+    left: 373px;
+    opacity: 1;
+    z-index: 100;
+}
+
+.music-item 
+{
+    width: 600px;
+    height: 650px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    pointer-events: all;
+    position: absolute;
+    top: 10px;
+    left: 190px;
+    border: solid black;
+}
+
+.music-item img 
+{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.music-item h4
+{
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.audio-player 
+{
+    margin-top: 10px;
+}
+
+audio 
+{
+    width: 100%;
+}
+
+
+.music-library 
+{
+    position: fixed;
+    left: -730px; 
+    top: 0;
+    width: 1051px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    z-index: 50;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.top
+{
+    font-size: 56px;
+    height: 650px;
+    width: 40px;
+    position: absolute;
+    left: 70px;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.hit
+{
+    font-size: 56px;
+    height: 650px;
+    width: 40px;
+    position: absolute;
+    left: 850px;
+    top: 40px;
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.music-library.open 
+{
+    left: 373px;
+    opacity: 1;
+    z-index: 100;
+}
+
+.invite 
+{
+    position: fixed;
+    left: -730px; 
+    top: 0;
+    width: 1051px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transition: left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    z-index: 50;
+    opacity: 0.1;
+    pointer-events: none;
+  }
+
+.invite.open 
+{
+    left: 373px; 
+    opacity: 1;
+    z-index: 100;
+}
+
+.carousel 
+{
+    position: relative;
+    width: 300px;  
+    height: 150px; 
+    overflow: hidden; 
+    margin-bottom: 30px;
+}
+    
+.carousel-track-container 
+{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+    
+.carousel-track 
+{
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+    width: 300%; 
+    padding: 0;
+    margin: 0;
+}
+    
+.carousel-slide 
+{
+    flex: 0 0 100%; 
+    box-sizing: border-box;
+}
+    
+.carousel-slide img 
+{
+    width: 100%;   
+    height: 100%;  
+    object-fit: cover; 
+}
+    
+.carousel-button 
+{
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+    
+.carousel-button:hover 
+{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+    
+.carousel-button.prev
+{
+    left: -10px;
+    padding-top: 61px;
+    padding-bottom: 80px;
+}
+    
+.carousel-button.next 
+{
+    right: -8px;
+    padding-right: 2px;
+    padding-top: 61px;
+    padding-bottom: 81px;
+}
+    
+
+.services 
+{
+    background-image: url('msc/images/ServiceBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff; 
+    padding: 40px 20px;
+    text-align: center; 
+    border-radius: 10px; 
+    margin-left: 120px;
+    margin-top: 50px;
+    max-width: 800px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    pointer-events: all;
+}
+    
+.services-image 
+{
+    flex-shrink: 0; 
+    width: 150px; 
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+    
+.services h2 
+{
+    font-family: 'Borel', serif; 
+    font-size: 2em; 
+    margin-bottom: 20px; 
+}
+    
+.services form 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.services label 
+{
+    font-family: 'Lora', serif; 
+    font-size: 1.2em; 
+    margin-top: 10px;
+}
+    
+.services input, .services textarea 
+{
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Lora', serif; 
+    font-size: 1em;
+}
+    
+    
+.services button 
+{
+    background-color: #8c7b5b; 
+    color: #ffffff; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Lora', serif;
+    font-size: 1em;
+}
+    
+.services button:hover 
+{
+    background-color: #d9c6a8;
+}
